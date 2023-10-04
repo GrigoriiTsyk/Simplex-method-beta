@@ -11,7 +11,13 @@ public class Main {
 
             FileInputStream input = new FileInputStream(file);
 
+            int inf = input.read();
 
+            while (inf != -1){
+                System.out.print((char)inf);
+
+                inf = input.read();
+            }
 
             input.close();
         }
