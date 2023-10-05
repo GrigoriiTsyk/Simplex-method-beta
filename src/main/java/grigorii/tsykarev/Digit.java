@@ -65,7 +65,7 @@ public class Digit {
                 denominator = 1;
                 isDig = true;
             } catch (NumberFormatException e) {
-                System.out.println("Invalid integer input");
+                //System.out.println("Invalid integer input");
             }
         } else {
             if (!toFraction(str)) {
@@ -75,4 +75,6 @@ public class Digit {
     }
 
     public boolean isDigit(){return isDig;}
+
+    public String getDigit(){return dig;}
 }
