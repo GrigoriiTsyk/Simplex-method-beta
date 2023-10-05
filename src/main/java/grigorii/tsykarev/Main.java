@@ -59,12 +59,13 @@ public class Main {
                         break;
                     }
                 }
+                Gauss gauss = new Gauss(matrix);
             }
             catch (Exception ex){
                 System.out.println(ex.getMessage());
             }
 
-            for(int i = 0; i < matrix.size(); i++) {
+            /*for(int i = 0; i < matrix.size(); i++) {
                 for (int j = 0; j < matrix.get(i).size(); j++) {
                     String str = String.format("%s ", matrix.get(i).get(j).getDigit());
 
@@ -72,7 +73,7 @@ public class Main {
                 }
 
                 System.out.println();
-            }
+            }*/
 
             input.close();
         }
